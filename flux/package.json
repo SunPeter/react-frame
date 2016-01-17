@@ -1,0 +1,28 @@
+{
+  "name": "flux_toturial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "peter",
+  "dependencies": {
+    "flux": "^2.0.1",
+    "react": "^0.12.0"
+  },
+  "devDependencies": {
+    "browserify": "^6.2.0",
+    "reactify": "^0.15.2",
+    "watchify": "^2.1.1"
+  },
+  "scripts": {
+    "start": "watchify -o app/bundle.js -v -d app/index.js"
+  },
+  "browserify": {
+    "transform": [
+      "reactify"
+    ]
+  },
+  "license": "ISC"
+}
